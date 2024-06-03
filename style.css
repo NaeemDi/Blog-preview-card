@@ -1,0 +1,150 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+}
+
+.card {
+  width: 386px;
+  height: 522px;
+  background-color: white;
+  margin: 100px auto;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 24px;
+  box-shadow: 8px 8px black;
+  font-family: "Figtree", sans-serif;
+}
+
+.img {
+  position: relative;
+  display: block;
+  width: 336px;
+  height: 200px;
+  background-color: white;
+  background-image: url(assets/images/illustration-article.svg);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+.bulle {
+  background-color: hsl(47, 88%, 63%);
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.published {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.content {
+  font-size: 16px;
+  color: gray;
+  line-height: 150%;
+}
+
+/* Author part  */
+
+.author {
+  margin-top: 24px;
+  width: 140px;
+  height: 32px;
+  display: flex;
+}
+
+.img-author {
+  display: inline-block;
+  width: 30px;
+}
+
+.img2 {
+  width: 100%;
+}
+.name {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 12px;
+  line-height: 32px;
+}
+
+/* hover */
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+/* responsive  */
+
+@media (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 501px;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 24px;
+    box-shadow: 8px 8px black;
+    font-family: "Figtree", sans-serif;
+  }
+
+  .bulle {
+    font-size: 12px;
+  }
+
+  .published {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+
+  .illustration {
+    position: relative;
+    display: block;
+    width: ;
+    border-radius: 10px;
+  }
+
+  img {
+    position: relative;
+    display: block;
+    width: 279px;
+    border-radius: 10px;
+  }
+
+  .img {
+    width: 100%;
+    height: 200px;
+  }
+}
